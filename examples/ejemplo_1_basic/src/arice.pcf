@@ -1,0 +1,60 @@
+# --------------------------
+#- ARiCE v1.0 (.pcf)
+#- By Pablo Cossutta
+#- November - 2019
+#- GPL license
+# --------------------------
+
+# Clock
+# --------------------------
+set_io --warn-no-port clk 35
+
+# RGB LED Driver 
+# --------------------------
+set_io -nowarn      RGB0  39
+set_io -nowarn      RGB1  40
+set_io -nowarn      RGB2  41
+
+# Left side
+# --------------------------
+set_io -nowarn       j01  20
+set_io -nowarn       j02  21
+set_io -nowarn       j03  23
+set_io -nowarn       j04  25
+set_io -nowarn       j05  26
+set_io -nowarn       j06  27
+set_io -nowarn       j07  31
+set_io -nowarn       j08  32
+set_io -nowarn       j09  34
+set_io -nowarn       j10  36
+set_io -nowarn       j11  37
+
+# Right side 
+# --------------------------
+set_io -nowarn       j13   2
+set_io -nowarn       j14   6
+set_io -nowarn       j15   9
+set_io -nowarn       j16  10
+set_io -nowarn       j17  11
+set_io -nowarn       j18  12
+set_io -nowarn       j19  13
+set_io -nowarn       j20  18
+set_io -nowarn       j21  19
+
+# pmod
+# --------------------------
+set_io -nowarn    pmod01   4
+set_io -nowarn    pmod02   3
+set_io -nowarn    pmod03  47
+set_io -nowarn    pmod04  44
+set_io -nowarn    pmod07  48
+set_io -nowarn    pmod08  45
+set_io -nowarn    pmod09  38
+set_io -nowarn    pmod10  42
+
+# FPGA internals
+# --------------------------
+set_io -nowarn  ice_miso  14
+set_io -nowarn   ice_sck  15
+set_io -nowarn    ice_ss  16
+set_io -nowarn  ice_mosi  14

@@ -1,0 +1,41 @@
+\documentclass[11pt, tikz, multi=page]{standalone}
+\usepackage{sansmathfonts}		% Sans Serif equations
+\usepackage[T1]{fontenc}			% Output font encoding for international characters
+\usepackage[utf8]{inputenc}			% Encoding of files: utf8
+\renewcommand*\familydefault{\sfdefault} 	% Sans Serif as default font
+\usepackage[spanish, es-tabla, es-nodecimaldot]{babel}
+\usepackage{amssymb,amsmath}
+\usepackage{bm}				% Bold symbols
+\usepackage[only,Yup]{stmaryrd} % El símbolo de la estrella
+\usepackage{overpic}
+\usepackage{circuitikz}
+\usetikzlibrary{positioning,shapes.misc}
+\usetikzlibrary{babel}
+% To use matlab2tikz
+\usetikzlibrary{shapes}
+\usepackage{pgfplots}
+\usepackage{grffile}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{arrows.meta}
+\usepgfplotslibrary{patchplots}
+
+\newcommand{\path}[1] {lowres/#1}  
+
+\definecolor{myBlue}{rgb}{0.00000,0.44700,0.74100}%
+\definecolor{myOrange}{rgb}{0.85000,0.32500,0.09800}%
+\pgfplotsset{
+	compat=1.16,
+	myTHD/.style={
+		width=9cm, height=4cm,
+		scale only axis,
+		bar shift auto,
+		ylabel style={font=\footnotesize},
+		axis background/.style={fill=white},
+		title style={font=\bfseries\footnotesize},
+		xmajorgrids, ymajorgrids,
+		xticklabel style={/pgf/number format/fixed,/pgf/number format/precision=5},
+		scaled x ticks=false,
+		tick label style={font=\footnotesize}
+	}
+}
